@@ -1,0 +1,161 @@
+.header__container{
+    background-color: #1a1a1a;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: white;
+    height: 70px;
+}
+
+.sticky{
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.logo__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 200px;
+}
+
+.logo__container img {
+    width: 80%;
+    padding-top: 5px;
+    margin-left: 20px;
+    vertical-align: middle;
+}
+.delivery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    font-weight: bold0;
+    padding: 5px;
+}
+
+.delivery p{
+    font-size: 10px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    flex: 0 1 60%;
+}
+
+.search select{
+    font-weight: bold;
+}
+.search select,.search input{
+   padding: 10px;
+   outline: 1px solid white;
+}
+
+.search select {
+    border: none;
+    background-color: #D4D4D4;
+}
+
+.search input{
+    border: 1px solid white;
+    width: 100%;
+    margin-right: -2px;
+    outline: none;
+    color: gray;
+}
+
+.search svg{
+    padding: 12px;
+    background-color: #febd69;
+    color: #1a1a1a;
+    
+}
+
+.search svg:hover{
+    background-color: #d49644;
+}
+
+.search:focus-within{
+    border: 2px solid rgb(255, 153, 0);
+}
+
+.order__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 450px;
+    gap: 10px;
+}
+
+.order__container a{
+    text-decoration: none;
+    color: white;
+}
+
+.order__container p{
+    font-size: 10px;
+}
+
+
+.language{
+    width: 60px;
+    display: flex;
+    padding: 10px;
+}
+
+.language select{
+    background-color: #1a1a1a;
+    border: none;
+    color: white;
+}
+
+.language img{
+    width: 40%;
+}
+
+.cart {
+    position: relative;
+    margin-left: 5px;
+
+}
+
+.cart span{
+    position: absolute;
+    font-weight: bold;
+    top: -10px;
+    font-size: 20px;
+    background-color: #1a1a1a;
+    left: 20px;
+    color: orange;
+}
+
+
+
+.order__container a:hover,.delivery:hover , .logo__container a:hover {
+    border:  1px solid white;
+    border-radius: 3px;
+}
+
+
+@media screen and (max-width:768px){
+
+    .header__container{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    .lower__conatiner ul li:not(:first-child){
+        display: none;
+    }
+
+    .language {
+        display: none;
+    }
+
+}

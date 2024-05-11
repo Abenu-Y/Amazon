@@ -1,0 +1,37 @@
+.card_container{
+    width: 300px;
+    height: 300px;
+    box-shadow: 0 0  10px rgba(0,0,0,0.2);
+    background-color: #fff;
+    padding: 0 15px;
+
+  
+}
+
+.card_container a img {
+    width: 100%;
+    object-fit: contain;
+    max-height: 250px;
+    /* padding: 0 5px; */
+}
+
+.card_container a{
+    text-decoration: none;
+    color: rgb(35,35,35);
+    /* padding: 0 5px; */
+    
+}
+
+.card_container a p {
+    font-size: 15px;
+    font-weight: bold;
+    color: #007185;
+}
+.card_container a p:hover {
+    color: #e09f84;
+}
+
+.card_container h3, .card_container p{
+   padding: 5px;
+   margin-left: 15px;
+}

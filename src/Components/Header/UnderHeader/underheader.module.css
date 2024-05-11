@@ -1,0 +1,37 @@
+
+.lower__container {
+    background-color: #232f3e;
+    color: white;
+}
+
+
+.lower__container ul {
+    display: flex;
+    list-style: none;
+    /* gap: 5px; */
+}
+
+
+.lower__container ul li{
+    padding: 8px;
+}
+
+.lower__container ul li:first-child{
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.lower__container ul li:hover{
+    border:  1px solid white;
+    border-radius: 3px;
+}
+
+
+@media screen and (max-width:768px){
+
+    .lower__conatiner ul li:not(:first-child){
+        display: none;
+    }
+
+}
