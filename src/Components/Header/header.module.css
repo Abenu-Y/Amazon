@@ -73,7 +73,7 @@
 .search svg{
     padding: 12px;
     background-color: #febd69;
-    color: #1a1a1a;
+    color: #1a1a1a !important;
     
 }
 
@@ -142,6 +142,14 @@
     border-radius: 3px;
 }
 
+.span{
+    font-size: 12px;
+    color: gray;
+}
+
+.span:hover{
+   color: white;
+}
 
 @media screen and (max-width:768px){
 

@@ -11,7 +11,6 @@ function CarouselSlide() {
     return (
         <>
 
-
                 <Carousel  
                    autoplay={true}
                    infiniteLoop={true}

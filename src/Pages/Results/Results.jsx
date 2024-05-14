@@ -20,7 +20,7 @@ function Results() {
              axios.get(`${ProductUrl}/products/category/${categoryType}`).then((res)=>{setCategoryData(res.data); setisLoading(false)}).catch((err)=>{; setisLoading(false)})
   },[])
 
-  console.log(categorydata)
+  //console.log(categorydata)
 
   return (
        <Layout>

@@ -2,9 +2,12 @@
     display: grid;
     justify-content: center;
     gap: 10px;
-    grid-template-columns: repeat(auto-fill,minmax(240px, 1fr));
+    grid-template-columns: repeat(auto-fit,minmax(240px, 1fr));
     max-width: 1450px;
-    margin: 100px auto;
+    margin: 100px auto !important;
+    /* place-items: center; */
+    justify-items: center;
+
 
 }
 

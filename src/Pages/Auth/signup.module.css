@@ -1,0 +1,86 @@
+.cont{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cont img {
+    margin: 30px auto;
+    object-fit: contain;
+    width: 100px;
+}
+
+.form_container{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    padding: 20px;
+}
+
+.form_container h1{
+    font-size: 25px;
+    margin: 20px 0;
+    font-weight: 400;
+}
+
+.form_container form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form_container form div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form_container form div input {
+    margin-bottom: 10px;
+    padding: 8px 16px;
+    background-color: #fff;
+    width: 100%;
+    border: none;
+    border: 1px solid gray;
+    border-radius: 3px;
+}
+
+.form_container form div input:focus{
+    outline: 2px solid skyblue;
+}
+
+.sign_in_btn{
+    border: none;
+    background-color:#F7CA00 ;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    height: 30px;
+    /* padding: 15px 0; */
+}
+
+.sign_in_btn:hover{
+    background-color:#f0c14b;
+}
+.form_container form p {
+     padding: 10px 0;
+     font-size: 14px;
+}
+
+.createAccount_btn{
+    border: none !important;
+    border-radius: 5px;
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+    cursor: pointer;
+    /* background-color:#F7CA00 ; */
+}
+
+.createAccount_btn:hover{
+    background-color: lightgray;
+}

@@ -13,12 +13,12 @@ function ProductCard({product,flex,rendDescr,renderADD}) {
 
   const[state, dispatch] = useContext(DataContext)
   
-  console.log(state)
+ //console.log(state)
 
   const addToCart =()=>{
       
        dispatch({
-              type:Type.ADD_TO_BASKET ,
+              type:Type.ADD_TO_BASKET,
               item:{
                   image,title,id,rating,price,description
               }
@@ -28,6 +28,7 @@ function ProductCard({product,flex,rendDescr,renderADD}) {
 
   return (
             <div className={`${cardStyle.card__container} ${flex ? cardStyle.product__flexed :''}`}>
+
                     <Link to={`/products/${id}`}><img src={image} alt=""/></Link>
 
                     <div>

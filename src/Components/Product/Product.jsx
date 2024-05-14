@@ -8,7 +8,7 @@ function Product() {
 
 
      const [products , setProducts] = useState([])
-      const [isLoading , setisLoading]=useState(false)
+     const [isLoading , setisLoading]=useState(false)
 
 
      useEffect(()=>{
@@ -19,23 +19,23 @@ function Product() {
                   setisLoading(false)}
             ).
             catch((err)=>{
-                  console.log(err); 
+                  //console.log(err); 
                   setisLoading(false)}
             )
      },[])
   
-  console.log(products)
+  //console.log(products)
       return (
             <>
-              {
-                  isLoading?<Loader />:<div className={productStyle.product__container}>
                   {
-                    products.map((singleProduct)=>(
-                      <ProductCard product={singleProduct} key={singleProduct.id} renderADD={true}/>
-                    ))
+                        isLoading?<Loader />:<div className={productStyle.product__container}>
+                        {
+                              products.map((singleProduct)=>(
+                              <ProductCard product={singleProduct} key={singleProduct.id} renderADD={true}/>
+                              ))
+                        }
+                        </div>
                   }
-                       </div>
-            }
             </>
             
           

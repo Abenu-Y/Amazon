@@ -5,20 +5,20 @@ import categoryStyle from './category.module.css'
 
 
 function Category ()  {
-    console.log(Data)
-  return (
-    <div className={categoryStyle.container}>
-          {
-              Data.map((singleData,index)=>{
+    //console.log(Data)
+      return (
+              <div className={categoryStyle.container}>
+                      {
+                            Data.map((singleData,index)=>{
 
-               return  <CategoryCard key={index} data={singleData} />
+                                  return  <CategoryCard key={index} data={singleData} />
 
-              }
-                         
-              )
-          }
-    </div>
-  )
+                            }
+                                  
+                            )
+                      }
+              </div>
+      )
 }
 
 export default Category

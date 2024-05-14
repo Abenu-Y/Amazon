@@ -8,15 +8,15 @@ const UnderHeader = () => {
     <div className={underheaderStyle.lower__container}>
          
          <ul>
-            <li>
-                <SlMenu />
-                <p>All</p>
-            </li>
-            <li>Today's Deall</li>
-            <li>Customer Sercvice</li>
-            <li>Registry</li>
-            <li>Gift Cards</li>
-            <li>Sell</li>
+                <li>
+                    <SlMenu />
+                    <p>All</p>
+                </li>
+                <li>Today's Deall</li>
+                <li>Customer Sercvice</li>
+                <li>Registry</li>
+                <li>Gift Cards</li>
+                <li>Sell</li>
          </ul>
 
     </div>
