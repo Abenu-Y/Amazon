@@ -13,15 +13,15 @@ function Pro() {
                  <div className={proStyle.pro_flex_child}>
 
                         <div className={proStyle.title}>{item.title}</div>
-                       <div className={proStyle.pro_container} style={{display:'gird', gridTemplateColumns:`repeat(${item.set.length/2},1fr)`,gap:'30px 15px'}}>
+                        <div className={proStyle.pro_container} style={{display:'gird', gridTemplateColumns:`repeat(${item.set.length/2},1fr)`,gap:'30px 15px'}}>
 
                                         
                     {
                     item.set.map((element)=>(
                         <div className={proStyle.singlePro}>
 
-                        <div><img src={element.pic} alt="" /></div>
-                        <div><p>{element.subTitle}</p></div>
+                            <div><img src={element.pic} alt="" /></div>
+                            <div><p>{element.subTitle}</p></div>
 
                         </div>
                     ))
@@ -29,9 +29,9 @@ function Pro() {
                     }
 
 
-                        </div>
+                    </div>
 
-                        <div className={proStyle.seeMore}>see more</div>
+                    <div className={proStyle.seeMore}>see more</div>
                  
                  </div>
             ))
