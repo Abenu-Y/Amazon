@@ -3,9 +3,9 @@ import two from './two.jpeg'
 import three from './three.jpeg'
 import four from './four.jpeg'
 
-import eight from './eight.jpeg'
 
 
-const Images =[one,two,three,four,eight]
+
+const Images =[one,two,three,four]
 
 export default Images

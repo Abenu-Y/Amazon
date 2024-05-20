@@ -7,7 +7,7 @@ import { auth } from './Utility/firebase'
 
 function App() {
 
-  const [{user},dispatch]=useContext(DataContext)
+  const [{user},dispatch] = useContext(DataContext)
 
   useEffect(()=>{
 

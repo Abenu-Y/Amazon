@@ -19,6 +19,8 @@ function Cart() {
   },0)
 
 
+//   console.log(basket)
+
   const increment = (item)=>{
        dispatch({
         type:Type.ADD_TO_BASKET,
@@ -33,7 +35,7 @@ function Cart() {
      })
   }
 
-
+console.log(basket.length)
   return (
     <Layout>
       <div className={cartStyle.cart__outer__container}>

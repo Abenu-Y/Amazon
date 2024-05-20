@@ -1,5 +1,6 @@
 .header__container{
     background-color: #1a1a1a;
+    background-color: #131921;
     display: flex;
     gap: 10px;
     align-items: center;
@@ -17,14 +18,19 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: 10px;
     max-width: 200px;
+}
+
+.logo__container a{
+   display: flex;
+   justify-content: center;
+   align-items:center;
+   height: 50px;
 }
 
 .logo__container img {
     width: 80%;
-    padding-top: 5px;
-    margin-left: 20px;
-    vertical-align: middle;
 }
 .delivery{
     display: flex;
@@ -32,12 +38,35 @@
     align-items: center;
     gap: 3px;
     font-weight: bold0;
-    padding: 5px;
+    height: 50px;
+    padding-inline: 5px;
 }
 
 .delivery p{
-    font-size: 10px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 10px;
+    width:60px;
+    color: rgb(204,204,204);
 }
+
+.delivery span {
+    color: #fff;
+    font-size: 14px;
+    line-height: 15px;
+    font-weight: 700;
+}
+
+
+
+/* .select_menu {
+  width: 60px;
+  width: auto;
+}
+optgroup{
+    width: 500px;
+    background-color: #fff;
+} */
 
 .search {
     display: flex;
@@ -91,22 +120,26 @@
     justify-content: center;
     max-width: 450px;
     gap: 10px;
+ 
 }
 
 .order__container a{
     text-decoration: none;
     color: white;
+    padding: 10px;
 }
 
 .order__container p{
-    font-size: 10px;
+    font-size: 12px;
+    font-weight: 450;
+    line-height: 8px;
 }
 
-
 .language{
-    width: 60px;
+    width: 70px;
     display: flex;
     padding: 10px;
+    height: auto;
 }
 
 .language select{
@@ -122,20 +155,28 @@
 .cart {
     position: relative;
     margin-left: 5px;
+    height: 50px;
+    bottom: 5px;
+    right: 10px;
 
 }
 
 .cart span{
     position: absolute;
     font-weight: bold;
-    top: -10px;
+    top: 15px;
     font-size: 20px;
     background-color: #1a1a1a;
-    left: 20px;
+    left: 40px;
     color: orange;
+    z-index: 100;
 }
 
-
+.order__container span{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 0;
+}
 
 .order__container a:hover,.delivery:hover , .logo__container a:hover {
     border:  1px solid white;

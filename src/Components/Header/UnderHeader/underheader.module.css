@@ -30,7 +30,7 @@
 
 @media screen and (max-width:768px){
 
-    .lower__conatiner ul li:not(:first-child){
+    .lower__container ul li:not(:first-child){
         display: none;
     }
 
