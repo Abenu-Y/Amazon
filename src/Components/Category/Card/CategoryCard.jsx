@@ -3,7 +3,7 @@ import categoryCardStyle from './categorycard.module.css'
 import { Link } from 'react-router-dom'
 
 
-function CategoryCard  ({data}) {
+function CategoryCard  ({ data }) {
   return (
     <div className={categoryCardStyle.card_container}>
           

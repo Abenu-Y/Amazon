@@ -7,7 +7,7 @@ import categoryStyle from './category.module.css'
 function Category ()  {
     //console.log(Data)
       return (
-              <div className={categoryStyle.container}>
+              <div className={categoryStyle.container} id='cat'>
                       {
                             Data.map((singleData,index)=>{
 

@@ -22,7 +22,7 @@ const categoryData = [
         title:"Men's fashion",
         name:"men's clothing",
         imgLink:"https://images.pexels.com/photos/297933/pexels-photo-297933.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    }
+    },
 
 ]
 

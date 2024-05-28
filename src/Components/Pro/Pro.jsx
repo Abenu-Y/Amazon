@@ -9,16 +9,16 @@ function Pro() {
   return (
     <div  className={proStyle.pro_flex_container}>
           {
-            ProData?.map((item)=>(
-                 <div className={proStyle.pro_flex_child}>
+            ProData?.map((item,i)=>(
+                 <div className={proStyle.pro_flex_child} key={i}>
 
                         <div className={proStyle.title}>{item.title}</div>
-                        <div className={proStyle.pro_container} style={{display:'gird', gridTemplateColumns:`repeat(${item.set.length/2},1fr)`,gap:'30px 15px'}}>
+                        <div className={proStyle.pro_container} style={{display:'grid',gridTemplateColumns:`repeat(${item.set.length/2},1fr)`,gap:'40px 20px'}}>
 
                                         
                     {
-                    item.set.map((element)=>(
-                        <div className={proStyle.singlePro}>
+                    item.set.map((element,index)=>(
+                        <div className={proStyle.singlePro} key={index}>
 
                             <div><img src={element.pic} alt="" /></div>
                             <div><p>{element.subTitle}</p></div>

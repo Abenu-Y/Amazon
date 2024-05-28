@@ -14,13 +14,10 @@
     border-radius: 4px;
     font-weight: 600;
     font-size: 12px;
+    cursor: pointer;
 }
 
 
-.footer_signIn_btn button a{
-    color: #141414;
-    text-decoration: none;
-}
 
 .footer_signIn_btn div:nth-child(1){
     font-size: 14px;

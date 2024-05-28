@@ -3,10 +3,17 @@ import { DataContext } from '../Data/DataProvider'
 import footerStyle from './footer.module.css'
 import { Link } from 'react-router-dom'
 import { TbWorld } from "react-icons/tb";
+
+import { useNavigate } from 'react-router-dom';
 const Footer = () => {
 
     const [{user},dispatch] =useContext(DataContext)
+    const navigate = useNavigate()
     const [isMobile, setIsMobile] = useState(window.innerWidth < 800);
+
+    const navig =()=>{
+          navigate('/auth')
+    }
 
 
     const scrollToTop = () => {
@@ -33,12 +40,12 @@ const Footer = () => {
   return (
 
 
-    <footer>
+    <footer id='footer'>
          
             {
                 !user && (<div className={footerStyle.footer_signIn_btn}> 
                          <div> See Personalised recommendations</div>                    
-                        <button><Link to='/orders'> Sign In</Link></button>
+                        <button onClick={navig}> Sign In</button>
                         <div>New Customer ? <span>start here</span></div>
                 </div>)
             }
@@ -58,7 +65,7 @@ const Footer = () => {
                                                 <li><Link to="/orders">Your Lists</Link></li>
                                                 <li><Link to="">Find a Gift</Link></li>
                                                 <li><Link to="">Browsing History</Link></li>
-                                                <li><Link to="">Returns</Link></li>
+                                                <li><Link to="#header">Returns</Link></li>
                                           </ul>
                                      </> :
                                      
@@ -69,8 +76,8 @@ const Footer = () => {
                                                 <li><Link to="">Blog</Link></li>
                                                 <li><Link to="">About Amazon</Link></li>
                                                 <li><Link to="">Investor Relations</Link></li>
-                                                <li><Link to="">Amazon Devices</Link></li>
-                                                <li><Link to="">Amazon Science</Link></li>
+                                                <li><Link to="#cat">Amazon Devices</Link></li>
+                                                <li><a href="#cat">Amazon Science</a></li>
                                           </ul>
                                      </>
                             }
@@ -157,6 +164,8 @@ const Footer = () => {
                               <option value="">  Protugues</option>
                               <option value=""> Spanish</option>
                         </select>
+                        
+                        {/* <progress value='70' max='100'></progress> */}
 
                         <select name="" id=""   className={footerStyle.select_no_arrow}>
                               <option value={<TbWorld />}>$ USD- U.S Dollar</option>

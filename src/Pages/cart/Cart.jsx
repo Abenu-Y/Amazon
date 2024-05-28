@@ -24,7 +24,7 @@ function Cart() {
   const increment = (item)=>{
        dispatch({
         type:Type.ADD_TO_BASKET,
-        item
+        item,
        })
   }
 
@@ -35,12 +35,12 @@ function Cart() {
      })
   }
 
-console.log(basket.length)
+// console.log(basket.length)
   return (
     <Layout>
       <div className={cartStyle.cart__outer__container}>
            <div className={cartStyle.cart__inner__container} >
-                 <h2> Your Shopping Bakset</h2>
+                 <h2> Your Shopping Bakset </h2>
                  <hr />
                  {
                     basket?.length === 0 ?(<p>No items found in your cart</p>):(

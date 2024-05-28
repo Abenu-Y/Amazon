@@ -3,7 +3,7 @@ import AuthStyle from './signup.module.css'
 import {Link,useNavigate,useLocation} from 'react-router-dom'
 
 import {auth} from '../../Utility/firebase'
-import {signInWithEmailAndPassword,createUserWithEmailAndPassword} from 'firebase/auth'
+import {signInWithEmailAndPassword,createUserWithEmailAndPassword, sendPasswordResetEmail} from 'firebase/auth'
 
 import {DataContext} from '../../Components/Data/DataProvider'
 import {Type} from '../../Utility/action.type'
@@ -18,6 +18,7 @@ function Auth() {
    const [password,setPassword] =useState("")
    const [error, setError] = useState("")
    const navStateData = useLocation()
+//    console.log(navStateData)
    //console.log(navStateData)
    const [loading,setLoading]=useState({
     signUP:false,
@@ -26,6 +27,19 @@ function Auth() {
    const [{user},dispatch]=useContext(DataContext)
    const navigate = useNavigate()
   // console.log(user)
+
+
+   
+  const reset = () =>{
+      sendPasswordResetEmail(auth,email).then(()=>{
+           Swal.fire({
+                 title: 'Password Reset',
+                 text: `A reset password link has been sent to your email ${email}. Please check your email to proceed.`,
+                 icon: 'info',
+                 confirmButtonText: 'OK'
+             })}).catch((err)=>{console.log(err)})
+     
+ }
    
 
    const authHandler =(e)=>{
@@ -49,6 +63,7 @@ function Auth() {
                catch((err)=>{
                // console.log(err)
                 setError(err.message)
+                setLoading(false)
               })
          }
          else{
@@ -72,10 +87,14 @@ function Auth() {
                catch((err)=>{
                 // console.log(err)
                 setError(err.message)
+                setLoading(false)
+
                 })
          }
 
    }
+
+ 
    //console.log(email,password)
   return (
       <div className={AuthStyle.cont}>
@@ -88,7 +107,7 @@ function Auth() {
               <div className={AuthStyle.form_container}>
                      <h1>Sign in</h1>
                      {
-                         navStateData.state.msg && (
+                         navStateData.state?.msg && (
                                <small style={{
                                     padding:'5px',
                                     textAlign:'center',
@@ -108,7 +127,11 @@ function Auth() {
                           </div>
 
                           <div>
-                                <label htmlFor="Password">Password</label>
+                                <div style={{display:'grid',gridTemplateColumns:'1fr 1fr' }}>
+                                     <label htmlFor="Password">Password</label>
+                                     <span  onClick={reset} style={{fontSize:'14px', color:'lightcoral',paddingLeft:'20px', cursor:'pointer'}}>Forgot Password ?</span>
+                                </div>
+
                                 <input type="password" name="" id="password" value={password} onChange={(event)=>setPassword(event.target.value)} />
                           </div>
 

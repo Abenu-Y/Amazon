@@ -15,7 +15,7 @@ export const  reducer =(state,action)=>{
                if(!existingItem){
 
                       return {
-                    ...state , basket:[...state.basket , {...action.item,amount:1}]
+                    ...state , basket:[...state.basket , {...action.item,amount:1}],
                       }
                }
                else{
@@ -25,7 +25,7 @@ export const  reducer =(state,action)=>{
                 })
 
                      return {
-                ...state, basket:updatedBasket
+                ...state, basket:updatedBasket,
                }
                }
 

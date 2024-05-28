@@ -45,7 +45,7 @@ function Orders() {
                           <div>
                                 {
                                    orders?.map((eachOrder,index)=>{
-                                    console.log(eachOrder)
+                                   // console.log(eachOrder)
                                     return (
                                           <div key={index}>
                                             <hr />

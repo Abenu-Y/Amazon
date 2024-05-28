@@ -1,23 +1,24 @@
-.pro_container{
-    display: grid;
-    /* grid-template-columns: repeat(); */
-}
+
 
 .pro_flex_container{
     display: flex;
-    gap: 12px;
+    gap: 30px;
     margin-top: 40px;
     justify-content: center;
+    padding-inline:15px ;
+    /* padding: 20px 0 15px !important; */
+
 }
 
 .pro_flex_child{
-    width: 340px;
+    width: 336px;
     height: 420px;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    padding: 10px;
+    padding-inline: 20px;
     color: black;
     text-decoration: none;
     position: relative;
+    
 }
 
 .seeMore{
@@ -39,7 +40,9 @@
 
 .pro_flex_child img{
     width: 100%;
-    /* object-fit: contain; */
+    /* height: 100%; */
+    transform: scale(1.02,1.25) translateY(15px);
+    object-fit: contain;
 }
 
 .pro_flex_child .singlePro{

@@ -24,7 +24,7 @@ function Routing() {
         <Router >
                <Routes>
                      <Route path='/' element={<Home />} />
-                     <Route path='auth' element={<Auth />} />
+                     <Route path='/auth' element={<Auth />} />
                      <Route path='payment' element={<ProtectedRoute msg={'you must log in to pay'}  redirect={'/payment'}><Elements stripe={stripePromise}><Payment /></Elements></ProtectedRoute>} />
                      {/* <Route path='payment' element={<Payment />} /> */}
                      <Route path='orders' element={<ProtectedRoute msg={'you must log in to access your orders'}  redirect={'/orders'}><Elements stripe={stripePromise}><Orders /></Elements></ProtectedRoute>} />

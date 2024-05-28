@@ -24,6 +24,7 @@
 
 .card_container a p {
     font-size: 15px;
+    /* line-height: 35px; */
     font-weight: bold;
     color: #007185;
 }
@@ -31,7 +32,12 @@
     color: #e09f84;
 }
 
-.card_container h3, .card_container p{
+.card_container p{
+  padding-top: 20px;
+}
+
+.card_container span h3{
    padding: 5px;
+   line-height: 35px;
    margin-left: 15px;
 }

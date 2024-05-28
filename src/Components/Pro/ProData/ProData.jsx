@@ -23,17 +23,18 @@ const ProData = [
         set:[{subTitle:'Dinning',pic:jar},{subTitle:'Home',pic:med},{subTitle:'Kitchen',pic:kitchen},{subTitle:'Health and Beauty',pic:shito}]
 
     },
-   
+    {
+        title:'Deal in PCs ',
+        set:[{pic:G}]
+
+    }
+   ,
     {
         title:'Shop deals in Fashion',
         set:[{subTitle:'Jeans under $50',pic:lebs},{subTitle:'Tops Under $25',pic:lelalebs},{subTitle:'Dresses under $30',pic:anotherlebs},{subTitle:'Shoes under $50',pic:chama}]
 
     }
-    , {
-        title:'Deal in PCs ',
-        set:[{pic:G}]
-
-    }
+    
 ]
 
 export default ProData

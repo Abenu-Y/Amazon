@@ -35,7 +35,7 @@ const total = basket.reduce((amount,item)=>{
 
       const handleChange =(e)=>{
             //  console.log(e)
-            e?.error?.meassage? setCardError(e?.error?.meassage):setCardError('')
+            e?.error?.message? setCardError(e?.error?.message):setCardError('')
       }
 
       const handlePayment = async(e) =>{
@@ -71,7 +71,7 @@ const total = basket.reduce((amount,item)=>{
                   setProcessing(false)
                }
                catch (err){
-                  //    console.log(err)
+                     console.log(err)
                      setProcessing(false)
 
                }
@@ -85,9 +85,9 @@ const total = basket.reduce((amount,item)=>{
                         
                           <h3>Delivery Address</h3>
                           <div>
-                               {/* <div>{user?.email}</div> */}
+                               <div>{user?.email}</div>
                                <div>321</div>
-                               <div>Unknown</div>
+                               {/* <div>Unknown</div> */}
                           </div>
                           
                      </div>
