@@ -5,10 +5,11 @@ import 'firebase/compat/firestore'
 import 'firebase/compat/auth'
 
 // TODO: Add SDKs for Firebase products that you want to use
+const apiKey = import.meta.env.VITE_REACT_APP_API_KEY;
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBksVgaTPEa0nEUGdv8u9gBPG-xA1v6Xmg",
+  apiKey: apiKey,
   authDomain: "netflix-e14db.firebaseapp.com",
   projectId: "netflix-e14db",
   storageBucket: "netflix-e14db.appspot.com",

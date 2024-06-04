@@ -44,7 +44,7 @@ const total = basket.reduce((amount,item)=>{
                try{
                      setProcessing(true)
                      const response =await instance({
-                        method:"POST",
+                        method:"post",
                         url:`/payment/create?total=${total*100}`
                      })
 
